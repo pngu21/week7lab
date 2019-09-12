@@ -1,0 +1,56 @@
+<html>
+    <head>
+            <link rel = "stylesheet" href = "styles.css">
+            
+    </head>
+    <body>
+            <h1>List of Tasks</h1> </br>
+            <ul>
+                <li><h3><a href="/">Home</a></h3></li>
+                <li><h3><a href="/newtask">Add New Task</a></h3></li>
+                <li><h3><a href="/newdeveloper">Add New Developer</a></h3></li>
+                <li><h3><a href="/listtasks">List of Tasks</a></h3></li>
+                <li><h3><a href="/listdevelopers">List of Developers</a></h3></li>
+                <li><h3><a href="/updatetask">Update Task</a></h3></li>
+                <li><h3><a href="/deletetask">Delete Task</a></h3></li>
+                <li><h3><a href="/deleteCompletedTasks">Delete Completed Tasks</a></h3></li>
+            </ul>
+
+            <form action = "/deleteCompleted" method = "POST">
+            <table>
+                <tr>
+                    <td>TaskID</td>
+                    <td>Name</td>
+                    <td>Assign_To</td>
+                    <td>Due Date</td>
+                    <td>Status</td>
+                    <td>Description</td>
+                </tr>
+                <% for(let i = 0; i < tasks.length; i++){ %>
+                    <tr>
+                        <td>
+                            <%= tasks[i]._id %>
+                        </td>
+                        <td>
+                            <%= tasks[i].name %>
+                        </td>
+                        <td>
+                            <%= tasks[i].assignTo %>
+                        </td>
+                        <td>
+                            <%= tasks[i].dueDate %>
+                        </td>
+                        <td>
+                            <%= tasks[i].status %>
+                        </td>
+                        <td>
+                            <%= tasks[i].description %>
+                        </td>
+                    </tr>
+                <%} %>
+            </table> </br>
+
+            
+            <button>Submit</button></form>
+    </body>
+</html>

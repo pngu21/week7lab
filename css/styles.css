@@ -1,0 +1,74 @@
+
+table,th,td{
+    border: 3px solid black;
+    background-color: rgb(172, 167, 162);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(mybackground.jpg);
+}
+
+ul,li{
+    list-style: none;
+}
+
+input[type=text],input[type=date],input[class=form-control],input[list=assignTo], select{
+width: 60%;
+padding: 12px 20px;
+margin: 8px 0;
+display: block;
+box-sizing: border-box;
+
+}
+
+
+
+button{
+    background-color: rgb(168, 180, 180);
+    color: rgb(3, 3, 3);
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+
+button:hover{
+    opacity: 0.8;
+}
+
+h3 {
+display: inline-block;
+color: aliceblue;
+}
+
+a:link {
+    color: aliceblue;
+}
+
+a:visited {
+    color:rgb(214, 96, 28);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(175, 53, 135);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+h1{
+    display: inline-block;
+    color:aliceblue;
+}
+
+img{
+    width:10%;
+    height: 10%;
+    float: left;
+    padding-right: 10%;
+
+}
